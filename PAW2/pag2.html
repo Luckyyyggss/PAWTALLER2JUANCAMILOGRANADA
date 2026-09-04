@@ -1,25 +1,124 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Catalogo de Peliculas o series</title>
+    <title>Catálogo de películas y series</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.classless.min.css">
-    <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet" href="styles2.css">
 </head>
 <body>
 
-    <nav>
+    <nav class="top-nav">
         <ul>
-            <li><strong>Catalogo de Peliculas o series</strong></li>
+            <li><strong>Catálogo de películas y series</strong></li>
         </ul>
     </nav>
-    <hr>
-    <h1>Bienvenido</h1>
-    <p>Bienvenido al catalogo de peliculas o series, aqui podras encontrar una variedad de opciones para disfrutar.</p>
+    <main>
+    <h1>Encuentra algo para ver</h1>
+    <p>Explora nuestra selección de películas y series para disfrutar.</p>
+
     <form role="search" action="#" method="get">
-        <input type="search" name="busqueda" placeholder="Buscar peliculas o series" aria-label="Buscar peliculas o series">
+        <label for="busqueda">Buscar en el catálogo</label>
+        <input id="busqueda" type="search" name="busqueda" placeholder="Buscar películas o series" aria-label="Buscar películas o series">
         <button type="submit">Buscar</button>
     </form>
+    <article class="ticket">
+      <div class="poster-wrap">
+        <span class="badge">Estreno</span>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQK7sH9v-F6Lq2_xzgdHZFjv02GDW8HpUk3DLzNLhpAHXLSgenH-MFMro&s=10" alt="Póster de una película">
+      </div>
+      <div class="perf"></div>
+      <div class="details">
+        <h2>minions</h2>
+        <div class="tags">
+          <span class="tag">Aventura</span>
+          <span class="tag">Comedia</span>
+          <span class="tag format">3D</span>
+        </div>
+        <button class="trailer-btn">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+          Ver tráiler
+        </button>
+      </div>
+    </article>
+        <article class="ticket">
+      <div class="poster-wrap">
+        <span class="badge">Estreno</span>
+        <img src="https://static.wikia.nocookie.net/harrypotter/images/f/fb/PS_poster.jpg/revision/latest?cb=20180318153750" alt="Póster de una película">
+      </div>
+      <div class="perf"></div>
+      <div class="details">
+        <h2>harry potter y la piedra filosofal</h2>
+        <div class="tags">
+          <span class="tag">Aventura</span>
+          <span class="tag">Comedia</span>
+          <span class="tag format">2D</span>
+        </div>
+        <button class="trailer-btn">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+          Ver tráiler
+        </button>
+      </div>
+    </article>
+        <article class="ticket">
+      <div class="poster-wrap">
+        <span class="badge">Estreno</span>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWZMeTnSDFtdv-tCs4YxJJiQtPIOK2emA6teOiNBWESTSz_KWW4fM0cwU&s=10" alt="Póster de una película">
+      </div>
+      <div class="perf"></div>
+      <div class="details">
+        <h2>secreto en la montaña</h2>
+        <div class="tags">
+          <span class="tag">Aventura</span>
+          <span class="tag">romance</span>
+          <span class="tag format">2D</span>
+        </div>
+        <button class="trailer-btn">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+          Ver tráiler
+        </button>
+      </div>
+    </article>
+            <article class="ticket">
+      <div class="poster-wrap">
+        <span class="badge">Estreno</span>
+        <img src="https://m.media-amazon.com/images/M/MV5BYmYwNGUwZWQtMTcyZC00ZjAxLThmZWEtMTY1OTIwZmI5YjBmXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" alt="Póster de una película">
+      </div>
+      <div class="perf"></div>
+      <div class="details">
+        <h2>spiderman brand new day</h2>
+        <div class="tags">
+          <span class="tag">Aventura</span>
+          <span class="tag">romance</span>
+          <span class="tag format">2D</span>
+        </div>
+        <button class="trailer-btn">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+          Ver tráiler
+        </button>
+      </div>
+    </article>
+    <article class="ticket">
+      <div class="poster-wrap">
+        <span class="badge">Estreno</span>
+        <img src="https://m.media-amazon.com/images/M/MV5BNzllNmRlN2EtMDQyOC00ODJjLTg4OWQtZDNmNGU3YzlkNjc1XkEyXkFqcGc@._V1_.jpg" alt="Póster de una película">
+      </div>
+      <div class="perf"></div>
+      <div class="details">
+        <h2>michael</h2>
+        <div class="tags">
+          <span class="tag">historia</span>
+          <span class="tag">drama</span>
+          <span class="tag format">2D</span>
+        </div>
+        <button class="trailer-btn">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+          Ver tráiler
+        </button>
+      </div>
+    </article>
+    </main>
+
 </body>
 </html>
