@@ -1,0 +1,119 @@
+ :root {
+  --ink-soft: #30263a;
+  --ink: #201923;
+  --marquee: rgb(255, 106, 0);
+  --cream: white;
+}
+
+body {
+  background: var(--pico-background-color);
+}
+
+main {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+.ticket {
+  max-width: 400px;
+  margin: 2rem auto;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+nav {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    padding: 0.5rem 2rem;
+    background: var(--pico-background-color);
+    padding: 0 5rem 2rem;
+    border-bottom: 1px solid var(--pico-muted-border-color);
+}
+  .ticket{
+    background:var(--ink-soft);
+    position:relative;
+    display:flex;
+    flex-direction:column;
+  }
+    .poster-wrap{
+    position:relative;
+    aspect-ratio:2/3;
+    overflow:hidden;
+    background:linear-gradient(160deg,#3a2f45,#1c1620);
+  }
+    .poster-wrap img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    display:block;
+  }
+    .badge{
+    position:absolute;
+    top:12px;
+    left:0;
+    background:var(--marquee);
+    color:var(--ink);
+    font-family:'Anton',sans-serif;
+    font-size:0.72rem;
+    letter-spacing:0.5px;
+    padding:5px 12px 5px 14px;
+    clip-path:polygon(0 0,100% 0,92% 100%,0% 100%);
+  }
+    .perf{
+    height:14px;
+    background:
+      radial-gradient(circle 5px at 14px 0, var(--ink) 99%, transparent 100%) top / 28px 14px repeat-x,
+      var(--ink-soft);
+    position:relative;
+  }
+    .trailer-btn{
+    margin-top:auto;
+    align-self:flex-start;
+    display:inline-flex;
+    align-items:center;
+    gap:8px;
+    background:transparent;
+    color:var(--cream);
+    border:1px solid rgba(244,236,221,0.35);
+    padding:9px 16px;
+    font-family:'Inter',sans-serif;
+    font-size:0.85rem;
+    font-weight:600;
+    cursor:pointer;
+    transition:background 0.15s ease, color 0.15s ease, border-color 0.15s ease;
+  }
+
+  .ticket {
+    color: var(--cream);
+  }
+
+  .details {
+    padding: 1.25rem;
+  }
+
+  .details h2 {
+    color: var(--cream);
+    margin-top: 0;
+  }
+
+  .tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+  }
+
+  .tag {
+    background: var(--marquee);
+    color: var(--ink);
+    padding: 0.25rem 0.6rem;
+    border-radius: 4px;
+    font-size: 0.85rem;
+  }
+
+  .trailer-btn:hover {
+    background: var(--marquee);
+    color: var(--ink);
+  }
