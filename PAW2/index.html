@@ -34,7 +34,7 @@
     </header>
 
     <section id="catalogo">
-        <div class="carrusel">
+        <div class="carrusel" style="margin-top: 30pxpx;">
             <article class="carta">
                 <img src="https://static.wikia.nocookie.net/doblaje/images/7/70/Mortal_Kombat_11.jpeg/revision/latest/thumbnail/width/360/height/360?cb=20190208200355&path-prefix=es"
                     alt="MK11" class="imagen">
@@ -111,9 +111,11 @@
 
             </article>
             <article class="carta">
-                <img src="https://image.api.playstation.com/cdn/UP1018/CUSA00133_00/Qsyx0vsXd6yI1JcqE8wtN3vUiDFjq6xR.png" alt="BATMAN:ARKHAM NIGHT"
-                    class="imagen">
-                <header><abrr title="BATMAN ARKHAM NIGHT">B:AN</abrr></header>
+                <img src="https://image.api.playstation.com/cdn/UP1018/CUSA00133_00/Qsyx0vsXd6yI1JcqE8wtN3vUiDFjq6xR.png"
+                    alt="BATMAN:ARKHAM NIGHT" class="imagen">
+                <header>
+                    <abrr title="BATMAN ARKHAM NIGHT">B:AN</abrr>
+                </header>
                 <nav>
                     <ul>
                         <li><a href="">COMPRAR</a></li>
@@ -125,8 +127,8 @@
 
             </article>
             <article class="carta">
-                <img src="https://store-images.s-microsoft.com/image/apps.36813.13786397198955106.1401148d-11f1-433b-8799-4232290db1e6.56cfe536-750b-4112-9d73-fc6755e48028" alt="ALICE:MR"
-                    class="imagen">
+                <img src="https://store-images.s-microsoft.com/image/apps.36813.13786397198955106.1401148d-11f1-433b-8799-4232290db1e6.56cfe536-750b-4112-9d73-fc6755e48028"
+                    alt="ALICE:MR" class="imagen">
                 <header>ALICE:MR</header>
                 <nav>
                     <ul>
@@ -143,7 +145,7 @@
     </section>
     <main>
         <section id="logros">
-            <h2>LOGROS</h2>
+            <h2 style="margin-top: 130px;">LOGROS</h2>
             <table>
                 <thead>
                     <tr>
@@ -168,7 +170,33 @@
             </table>
         </section>
         <section id="registro">
+            <div>
+                <h2 style="margin-top: 130px;">🚀 Inscribirse</h2>
+                <form>
+                    <div class="field">
+                        <label>Tu Nombre</label>
+                        <input type="text" placeholder="Ej. Juan Granada" required>
+                    </div>
 
+                    <div class="field">
+                        <label>Género de Videojuegos favorito</label>
+                        <select required>
+                            <option value="" disabled selected>Elige una opción...</option>
+                            <option>Acción</option>
+                            <option>Plataformas</option>
+                            <option>Indie</option>
+                        </select>
+                    </div>
+
+                    <div class="field">
+                        <label>Que juego te gustaria?</label>
+                        <textarea placeholder="Escribelo aqui!" rows="3"></textarea>
+                    </div>
+<br>
+<br>
+                    <button type="submit" class="btn-enviar">Registrarme</button>
+                </form>
+            </div>
         </section>
     </main>
 
